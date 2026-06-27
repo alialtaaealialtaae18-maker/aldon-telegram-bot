@@ -51,7 +51,7 @@ async def buttons(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await query.edit_message_text(text)
 
 
-app = Application.builder().token(8707948893:AAFAv1RQgZiY7dRIocC-DYSK3zcVT3emdmk).build()
+app = Application.builder().token(BOT_TOKEN).build()
 
 app.add_handler(CommandHandler("start", start))
 app.add_handler(CallbackQueryHandler(buttons))
